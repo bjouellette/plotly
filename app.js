@@ -1,6 +1,6 @@
 function init() {
     var selData = d3.select("#selDataset")
-    d3.json("/samples.json").then((importedData) => {
+    d3.json("samples.json").then((importedData) => {
       
         console.log(importedData.names)
         importedData.names.forEach((name) => {
@@ -19,7 +19,7 @@ function optionChanged(userData) {
     Charts(userData);
 };
 function demoData(userData) {
-    d3.json("/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
     console.log(data.metadata)
     var filterData = data.metadata.filter(md => md.id == userData)
     var firstElement = filterData[0]
@@ -35,7 +35,7 @@ function demoData(userData) {
 };
 
 function Charts(userData) {
-    d3.json("/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
         var samples = data.samples.filter(md => md.id == userData);
         var filterElement = samples[0];
 
