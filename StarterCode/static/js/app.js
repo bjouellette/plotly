@@ -55,7 +55,7 @@ function Charts(userData) {
 // //-----------------------//
         var trace1 = {
             x: sample_values1.slice(0,10).reverse(),
-            y: otu_ids1.slice(0,10).map(id => `otu_id ${id}`).reverse(),
+            y: otu_ids1.slice(0,10).map(id => `OTU ID ${id}`).reverse(),
             text: otu_labels1.slice(0,10).reverse(),
             type: "bar",
             orientation: "h",

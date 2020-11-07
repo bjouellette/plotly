@@ -50,7 +50,7 @@ function gaugeChart(wfreq){
             color: '850000'
         }
         }],
-    title: 'Test1 Bla bla bla',
+    title: 'Bacteria Gauge',
     height: 500,
     width: 600,
     xaxis: {type:'category',zeroline:false, showticklabels:false,
