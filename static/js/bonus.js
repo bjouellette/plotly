@@ -50,7 +50,7 @@ function gaugeChart(wfreq){
             color: '850000'
         }
         }],
-    title: 'Bacteria Gauge',
+    title: 'Washing Frequency',
     height: 500,
     width: 600,
     xaxis: {type:'category',zeroline:false, showticklabels:false,
